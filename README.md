@@ -1,2 +1,2 @@
-# Calculadora-de-IR
-Website para calcular imposto
+# Calculadora IR
+Website para calcular imposto de renda

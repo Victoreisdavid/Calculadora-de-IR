@@ -1,0 +1,54 @@
+@use "variables";
+
+#content {
+    width: fit-content;
+    margin: auto;
+    margin-top: 12vh;
+    text-align: center;
+
+    .container {
+        width: fit-content;
+        margin: auto;
+        text-align: left;
+
+        input[type=text] {
+            margin: auto;
+            padding: 15px;
+            width: 330px;
+            box-shadow: 0px 0px 1px #555;
+            border: none;
+            background-color: variables.$mid-color;
+    
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .placeholder {
+            color: #555;
+            width: fit-content;
+            margin-left: 6px;
+            padding: 0px 5px 0px 5px;
+            transform: translateY(-300%);
+            background-color: variables.$mid-color;
+        }
+    }
+
+    button {
+        border: none;
+        background-color: variables.$brand-color;
+        color: variables.$light-color;
+        font-weight: 800;
+        padding: 10px 18px;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
+
+    #results {
+        text-align: left;
+
+        h1 {
+            text-align: center;
+        }
+    }
+}

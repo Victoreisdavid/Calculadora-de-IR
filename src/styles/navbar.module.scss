@@ -1,0 +1,18 @@
+@use "variables";
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    background-color: variables.$dark-color;
+    padding: 15px;
+
+    a {
+        display: block;
+        color: variables.$mid-color;
+        text-decoration: none;
+        margin: 6px;
+        font-size: 1.1em;
+    }
+}

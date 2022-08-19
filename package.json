@@ -1,0 +1,26 @@
+{
+  "name": "calculadora-de-ir",
+  "version": "1.0.0",
+  "description": "Website para calcular imposto",
+  "main": "index.js",
+  "scripts": {
+    "next-dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Victoreisdavid/Calculadora-de-IR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Victoreisdavid/Calculadora-de-IR/issues"
+  },
+  "homepage": "https://github.com/Victoreisdavid/Calculadora-de-IR#readme",
+  "dependencies": {
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.54.4"
+  }
+}
