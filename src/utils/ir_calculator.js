@@ -62,9 +62,9 @@ function calcIR(valor, dependentes = 0) {
     const taxa = calcTaxa(valor)
     const desconto = dependentes_desconto * dependentes // Desconto dos dependentes
 
-    const imposto = valor * aliquota
+    const imposto = valor - taxa
 
-    return imposto - taxa - desconto
+    return imposto * aliquota - desconto
 }
 
 export default { calcIR, calcAliquota, calcTaxa, findClosestNumber }
