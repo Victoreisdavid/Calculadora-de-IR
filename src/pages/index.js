@@ -23,10 +23,10 @@ export default function Main() {
             const taxa = calculator.calcTaxa(salario)
             const desconto_dependentes = 189.59 * dependentes
 
-            document.querySelector("#result").textContent = `${imposto.toFixed(2)}R$`
+            document.querySelector("#result").textContent = `R$ ${imposto.toFixed(2)}`
             document.querySelector("#oliquot").textContent = `${(oliquota * 100).toFixed(2)}%`
-            document.querySelector("#tax").textContent = `${taxa.toFixed(2)}R$`  
-            document.querySelector("#desconto").textContent = `${desconto_dependentes.toFixed(2)}R$`
+            document.querySelector("#tax").textContent = `R$ ${taxa.toFixed(2)}`  
+            document.querySelector("#desconto").textContent = `R$ ${desconto_dependentes.toFixed(2)}`
         })
     }, [])
 
@@ -50,10 +50,10 @@ export default function Main() {
                 <div id={style.results}>
                     <br />
                     <h1>Resultados</h1>
-                    <p>Imposto a ser pago: <strong><span id="result" /></strong></p>
                     <p>Oliquota: <strong><span id="oliquot" /></strong></p>
                     <p>Taxa: <strong><span id="tax" /></strong></p>
                     <p>Desconto por dependentes: <strong><span id="desconto" /></strong></p>
+                    <p><strong>Imposto a ser pago: <span id="result" /></strong></p>
                 </div>
             </div>
         </>
